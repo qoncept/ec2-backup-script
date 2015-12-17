@@ -1,0 +1,8 @@
+---
+region: "ap-northeast-1"
+access_key_id: "xxxxxxxx"
+secret_access_key: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+target_instance_ids:
+  - "i-xxxxxxxx"
+backup_max_age_in_days: 3
+
