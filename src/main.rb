@@ -67,7 +67,7 @@ class App
 	end
 	def backup_instance(instance_id)
 		now = DateTime.now
-		max_age = config["backup_max_age_in_days"].to_i * 86400
+		max_age = config["backup_max_age_in_days"].to_f * 86400
 
 		instances_ret = ec2.describe_instances(instance_ids: [instance_id])
 		target_instance = instances_ret.reservations.first.instances.first
